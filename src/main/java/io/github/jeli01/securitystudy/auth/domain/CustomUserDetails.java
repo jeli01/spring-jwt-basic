@@ -1,6 +1,6 @@
-package io.github.jeli01.securitystudy;
+package io.github.jeli01.securitystudy.auth.domain;
 
-import io.github.jeli01.securitystudy.domain.UserEntity;
+import io.github.jeli01.securitystudy.auth.domain.UserEntity;
 import java.util.ArrayList;
 import java.util.Collection;
 import org.springframework.security.core.GrantedAuthority;
@@ -11,13 +11,11 @@ public class CustomUserDetails implements UserDetails {
     private final UserEntity userEntity;
 
     public CustomUserDetails(UserEntity userEntity) {
-
         this.userEntity = userEntity;
     }
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-
         Collection<GrantedAuthority> collection = new ArrayList<>();
 
         collection.add(new GrantedAuthority() {

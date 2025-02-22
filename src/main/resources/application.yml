@@ -1,13 +1,15 @@
+# 프로젝트 이름
 spring:
   application:
     name: sessionTest
-
+# 디비 설정
   datasource:
     driver-class-name: org.mariadb.jdbc.Driver
     url: jdbc:mariadb://localhost:3306/session_test
     username: root
     password: 1111
 
+#   jpa 설정
   jpa:
     hibernate:
       ddl-auto: create
@@ -16,6 +18,5 @@ spring:
         format_sql: true
     show-sql: true
 
-  devtools:
-    restart:
-      enabled: false
+  jwt:
+    secret: "vmfhaltmskdlstkfkdgodyroqkfwkdbalroqkfwkdbalaaaaaaaaaaaaaaaabbbbb"

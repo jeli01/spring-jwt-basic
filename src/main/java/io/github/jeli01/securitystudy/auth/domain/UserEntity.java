@@ -1,4 +1,4 @@
-package io.github.jeli01.securitystudy.domain;
+package io.github.jeli01.securitystudy.auth.domain;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

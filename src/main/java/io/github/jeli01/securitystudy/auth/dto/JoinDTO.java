@@ -1,4 +1,4 @@
-package io.github.jeli01.securitystudy.dto;
+package io.github.jeli01.securitystudy.auth.dto;
 
 import lombok.Getter;
 import lombok.Setter;

@@ -1,8 +1,8 @@
-package io.github.jeli01.securitystudy.service;
+package io.github.jeli01.securitystudy.auth.service;
 
-import io.github.jeli01.securitystudy.domain.UserEntity;
-import io.github.jeli01.securitystudy.dto.JoinDTO;
-import io.github.jeli01.securitystudy.repository.UserRepository;
+import io.github.jeli01.securitystudy.auth.dto.JoinDTO;
+import io.github.jeli01.securitystudy.auth.domain.UserEntity;
+import io.github.jeli01.securitystudy.auth.repository.UserRepository;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 

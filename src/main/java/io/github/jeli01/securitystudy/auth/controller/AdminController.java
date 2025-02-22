@@ -1,4 +1,4 @@
-package io.github.jeli01.securitystudy.controller;
+package io.github.jeli01.securitystudy.auth.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

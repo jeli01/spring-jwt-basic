@@ -1,9 +1,9 @@
-package io.github.jeli01.securitystudy.service;
+package io.github.jeli01.securitystudy.auth.service;
 
 
-import io.github.jeli01.securitystudy.CustomUserDetails;
-import io.github.jeli01.securitystudy.domain.UserEntity;
-import io.github.jeli01.securitystudy.repository.UserRepository;
+import io.github.jeli01.securitystudy.auth.domain.CustomUserDetails;
+import io.github.jeli01.securitystudy.auth.domain.UserEntity;
+import io.github.jeli01.securitystudy.auth.repository.UserRepository;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -20,7 +20,6 @@ public class CustomUserDetailsService implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-
         //DB에서 조회
         UserEntity userData = userRepository.findByUsername(username);
 
